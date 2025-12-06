@@ -25,3 +25,14 @@ These implementations demonstrate how the same algorithm can be mapped onto vari
 ---
 
 ## 📂 Repository Structure
+/project
+│
+├── sequential/ # Baseline sequential implementation
+├── opencilk/ # Parallel version using OpenCilk
+├── openmp/ # Parallel version using OpenMP
+├── pthreads/ # Parallel version using POSIX threads
+│
+├── input/ # Example input files (if any)
+├── results/ # Collected runtime measurements or logs
+│
+└── README.md # This file
