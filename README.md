@@ -22,17 +22,3 @@ The sequential solution is then extended into multiple parallel versions, each l
 
 These implementations demonstrate how the same algorithm can be mapped onto various parallel paradigms, offering insights into performance, scalability, and implementation complexity.
 
----
-
-## 📂 Repository Structure
-/project
-│
-├── sequential/ # Baseline sequential implementation
-├── opencilk/ # Parallel version using OpenCilk
-├── openmp/ # Parallel version using OpenMP
-├── pthreads/ # Parallel version using POSIX threads
-│
-├── input/ # Example input files (if any)
-├── results/ # Collected runtime measurements or logs
-│
-└── README.md # This file
