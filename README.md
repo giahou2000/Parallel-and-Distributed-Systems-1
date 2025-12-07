@@ -22,3 +22,10 @@ The sequential solution is then extended into multiple parallel versions, each l
 
 These implementations demonstrate how the same algorithm can be mapped onto various parallel paradigms, offering insights into performance, scalability, and implementation complexity.
 
+---
+
+## Matrix Market File Formats
+
+In this task we will use matrices stored in the Coordinate text file format.
+Instructions on the format design and the manipulation of such formats can be found in:
+[Matrix Market: File Formats](https://math.nist.gov/MatrixMarket/formats.html#MMformat)
