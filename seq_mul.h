@@ -1,9 +1,8 @@
 /*
- * Serial(kinda) multiplication function
- *"Your savior is here" Loki L.
+ * Serial multiplication function
  */
  
-//We will attempt to compute the multiplications that are not gonna be zero after the Hadamard product(Wish us good luck!!!)
+//We will attempt to compute the multiplications that are not gonna be zero after the Hadamard product
 
 CSC sequential_masked_triangle_counting(CSC A){
 	/*
@@ -104,6 +103,7 @@ CSC sequential_masked_triangle_counting(CSC A){
 	
 	return final_matrix;
 }
+
 
 
 
