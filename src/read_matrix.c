@@ -12,14 +12,14 @@
  * - First line: number of vertices (n)
  * - Next n lines: n space-separated integers per line (adjacency matrix)
  */
-int** read_graph_matrix(const char* filename, int* rows, int* cols)
+int** read_matrix(const char* filename, int* rows, int* cols)
 {
     FILE* file;
-    int n, i, j;
+    int n, i, j; // number of vertices, loop counters
     int** matrix;
 
     if (filename == NULL || rows == NULL || cols == NULL) {
-        fprintf(stderr, "Error: Invalid arguments to read_graph_matrix\n");
+        fprintf(stderr, "Error: Invalid arguments to read_matrix\n");
         return NULL;
     }
 
