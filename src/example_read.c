@@ -24,16 +24,16 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "mmio.h"
+#include "C:\Users\Christos Giachoudis\Projects\Github\Parallel-and-Distributed-Systems-1\include\mmio.h"
 
 int main(int argc, char *argv[])
 {
-    int ret_code; // return code variable to check if a function was successful
-    MM_typecode matcode; // variable to hold the matrix type code
-    FILE *f; // file pointer
-    int M, N, nz; // matrix dimensions and number of non-zero entries
-    int i, *I, *J; // arrays to hold row and column indices
-    double *val; // array to hold non-zero values
+    int ret_code;           // return code variable to check if a function was successful
+    MM_typecode matcode;    // variable to hold the matrix type code
+    FILE *f;                // file pointer
+    int M, N, nz;           // matrix dimensions and number of non-zero entries
+    int i, *I, *J;          // arrays to hold row and column indices
+    double *val;            // array to hold non-zero values
 
     if (argc < 2)
 	{
@@ -68,13 +68,11 @@ int main(int argc, char *argv[])
     }
 
     /* find out size of sparse matrix .... */
-
     if ((ret_code = mm_read_mtx_crd_size(f, &M, &N, &nz)) !=0)
         exit(1);
 
 
     /* reseve memory for matrices */
-
     I = (int *) malloc(nz * sizeof(int));
     J = (int *) malloc(nz * sizeof(int));
     val = (double *) malloc(nz * sizeof(double));
@@ -91,6 +89,7 @@ int main(int argc, char *argv[])
         J[i]--;
     }
 
+    // close the file if it is not stdin
     if (f !=stdin) fclose(f);
 
     /************************/
